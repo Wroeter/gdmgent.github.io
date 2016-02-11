@@ -11,10 +11,10 @@
     <!-- Latest version of certain rendering browserengines -->
     <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
     <!-- Title -->
-    <title>gdm.gent | Web and New Media | Artevelde University College Ghent</title>
+    <title>Disclaimer gdm.gent | Web and New Media | Artevelde University College Ghent</title>
     <!-- Other SEO tags -->	
-	<meta name="description" content="gdm.gent frontend boilerplate for the mass. We want the share all or knowledge on webtechnologies with you all :)">
-	<meta name="keywords" content="HTML5, CSS3, JavaScript, jQuery, Responsive, Grid">
+	<meta name="description" content="Disclaimer gdm.gent frontend boilerplate for the mass. We want the share all or knowledge on webtechnologies with you all :)">
+	<meta name="keywords" content="HTML5, CSS3, JavaScript, jQuery, Responsive, Grid, Blog">
 	<meta name="author" content="gdm.gent | Bachelor of Graphic and Digital Media | Artevelde University College Ghent">
 	<meta name="copyright" content="Copyright 2010-16 Artevelde University College Ghent. All Rights Reserved.">
     <!-- Sitemap.xml -->
@@ -45,16 +45,16 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#4535ed">   
     <meta name="apple-mobile-web-app-title" content="gdm.gent">
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="gdm.gent">
+    <meta name="application-name" content="Blog gdm.gent">
     <meta name="msapplication-TileColor" content="#4535ed">
     <meta name="msapplication-TileImage" content="/css/images/favicons/mstile-144x144.png">
     <meta name="msapplication-config" content="/css/images/favicons/browserconfig.xml">
-    <meta name="msapplication-tooltip" content="gdm.gent frontend boilerplate for the mass. We want the share all or knowledge on webtechnologies with you all :)">
+    <meta name="msapplication-tooltip" content="Disclaimer gdm.gent frontend boilerplate for the mass. We want the share all or knowledge on webtechnologies with you all :)">
     <meta name="msapplication-navbutton-color" content="#4535ed">
     <meta name="theme-color" content="#4535ed">
     <!-- Social media -->
-    <meta property="og:title" content="gdm.gent | Web and New Media | Artevelde University College Ghent">
-    <meta property="og:description" content="gdm.gent frontend boilerplate for the mass. We want the share all or knowledge on webtechnologies with you all :)">
+    <meta property="og:title" content="Disclaimer gdm.gent | Web and New Media | Artevelde University College Ghent">
+    <meta property="og:description" content="Disclaimer gdm.gent frontend boilerplate for the mass. We want the share all or knowledge on webtechnologies with you all :)">
     <meta property="og:type" content="website">
     <meta property="og:image" content="css/images/favicons/android-chrome-192x192.png">
     <!-- DNS prefetching -->
@@ -62,14 +62,15 @@
     <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="vendor/normalize-css/normalize.css">
-    <link rel="stylesheet" href="css/helpers.css">
-    <link rel="stylesheet" href="css/flex-grid.css">
-    <link rel="stylesheet" href="css/flex-hero.css">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/navigation.css">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="../vendor/normalize-css/normalize.css">
+    <link rel="stylesheet" href="../css/helpers.css">
+    <link rel="stylesheet" href="../css/flex-grid.css">
+    <link rel="stylesheet" href="../css/flex-hero.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/page.css">
+    <link rel="stylesheet" href="../css/blog.css">
     <!-- Modernizr -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script>window.Modernizr || document.write('<script src="vendor/modernizr-dev/modernizr.min.js">\x3C/script>')</script>
@@ -89,11 +90,11 @@
 						<nav class="nav nav--primary" role="navigation">
 							<a href="#" class="nav-toggle nav-toggle--close icon--close"><span>Close</span></a>
 							<ul class="nav__list">
-								<li class="nav__item nav__item--active"><a class="nav__item-link nav__item-link--active" href="./">Home</a></li>
-								<li class="nav__item"><a class="nav__item-link" href="./about/">About</a></li>
-								<li class="nav__item"><a class="nav__item-link" href="./blog/">Blog</a></li>
-								<li class="nav__item"><a class="nav__item-link" href="./showcase">Showcase</a></li>
-								<li class="nav__item"><a class="nav__item-link" href="./about/contact.html">Contact</a></li>
+								<li class="nav__item"><a class="nav__item-link" href="../">Home</a></li>
+								<li class="nav__item nav__item--active"><a class="nav__item-link nav__item-link--active" href="../about/">About</a></li>
+								<li class="nav__item"><a class="nav__item-link" href="../blog/">Blog</a></li>
+								<li class="nav__item"><a class="nav__item-link" href="../showcase">Showcase</a></li>
+								<li class="nav__item"><a class="nav__item-link" href="../about/contact.html">Contact</a></li>
 							</ul>			
 						</nav>
 					</header>
@@ -102,46 +103,32 @@
 		</div>
 	</div><!-- End Header -->
 	
-	<!-- Home -->
-	<div class="flex-hero hero-bkgnd home-wrapper" id="home">
-		<div class="flex-hero__container">
-			<div class="flex-hero__header">
-			</div>
-			<div class="flex-hero__main">
-				<div class="flex-hero__main-left">
-				</div>
-				<div class="flex-hero__main-center">
-					<div class="flex-hero__main-center-content">
-						<div class="flex-grid__container">
-							<div class="flex-grid__row">
-								<div class="flex-grid__column-bp1-12">
-									<figure class="figure--hero">
-										<figcaption class="figure__caption">
-											<h1>Hi there! We are <abbr title="Bachelor of Graphic and Digital Media at Artevelde University College Ghent">GDM Gent</abbr>!</h1>
-											<div class="caption__inner ">
-												<p>And we like coffee &amp; code in the morning.<br>… And in the afternoon.<br>… And in the evening as well.</p>
-                                                <p>Now that we think of it, pretty much all the time!</p>
-												<a href="./about" class="btn">Read more About us</a>
-											</div>
-										</figcaption>
-									</figure>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="flex-hero__main-right">
-				</div>
-			</div>
-			<div class="flex-hero__footer ">
+	<!-- Disclaimer -->
+	<div class="page-wrapper disclaimer-wrapper" id="blog">
+		<div class="flex-grid__container">
+			<div class="flex-grid__row">
+                <main class="flex-grid__column-bp1-12 flex-grid__column-bp3-8 flex-grid__offset-bp3-2">
+                    <h1>Disclaimer</h1>
+                    <h2>Inhoud</h2>
+                    <p>Via deze website wil de Arteveldehogeschool correcte en actuele informatie verstrekken over haar opleidingen, vacatures, onderzoeksprojecten enzovoort. De Arteveldehogeschool kan evenwel niet aansprakelijk gesteld worden voor foutieve of verouderde informatie.</p>
+                    <p>Heb je een vraag of opmerking over de inhoud van deze website? Mail naar <a href="mailto:webmaster@arteveldehs.be?subject=Contact via frontend boilerplate">webmaster@arteveldehs.be</a>.</p>
+                    <h2>Links</h2>
+                    <p>De Arteveldehogeschool kan niet aansprakelijk gesteld worden voor enige schade die zou voortvloeien uit het doorklikken naar websites of andere informatiebronnen waarnaar de eigen website verwijst.</p>
+                    <h2>Intellectuele rechten</h2>
+                    <p>De Arteveldehogeschool behoudt alle intellectuele rechten op de website en de hierop geplaatste informatie.</p>
+                    <p>De informatie op de website mag gebruikt worden overeenkomstig de bepalingen van de Belgische auteurswetgeving.</p>
+                    <h2>Persoonsgegevens</h2>
+                    <p>Persoonsgegevens die je invult op deze website worden bewaard door de Arteveldehogeschool. Ze dienen enkel om de door jou gevraagde informatie te verstrekken.</p>
+                    <p>Overeenkomstig de wet betreffende de verwerking van persoonsgegevens heb je het recht je gegevens te raadplegen en zo nodig te verbeteren. Mail hiervoor naar <a href="mailto:webmaster@arteveldehs.be?subject=Contact via frontend boilerplate">webmaster@arteveldehs.be</a>.</p>
+                </main>
 			</div>
 		</div>
-	</div><!-- End Home -->
+	</div><!-- End Disclaimer -->
     
     <!-- Bottom scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="vendor/jquery/jquery.min.js">\x3C/script>')</script>
-    <script src="js/base.js"></script>
+    <script>window.jQuery || document.write('<script src="../vendor/jquery/jquery.min.js">\x3C/script>')</script>
+    <script src="../js/base.js"></script>
     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>

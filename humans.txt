@@ -1,0 +1,26 @@
+/* TEAM */
+Company: Arteveldehogeschool
+Website: http://www.arteveldehs.be
+Twitter: @ArteveldeHS
+Email: info [at] arteveldehs [dot] be
+Location: Ghent, Belgium
+
+Data+Design+HTML+CSS+PHP+MySQL+jQuery: Philippe De Pauw - Waterschoot
+Website: http://www.drdynscript.eu
+Twitter: @drdynscript
+Location: Ghent, Belgium
+
+Data+Design+HTML+CSS+PHP+MySQL+jQuery: Philippe De Pauw - Waterschoot
+Website: http://www.olivierparent.be
+Twitter: @olivpa
+Location: Ghent, Belgium
+
+
+/* THANKS */
+All the 633|<5
+
+/* SITE */
+Last update: Always up-to-date
+Standards: HTML5, CSS3
+Components: Modernizr, jQuery, Google Maps
+Software: PHP, MySQL, Sublime Text, Notepad++

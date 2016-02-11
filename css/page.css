@@ -1,0 +1,16 @@
+/* ==========================================================================
+   Page styles
+   ========================================================================== */
+.header-wrapper {
+    background: rgba(69, 53, 237, 1);
+}  
+
+.page-wrapper {
+    padding-top: 78px;
+}
+
+@media (min-width: 30rem) {
+    .page-wrapper {
+        padding-top: 107px;
+    }
+}
