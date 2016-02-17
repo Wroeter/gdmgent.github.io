@@ -27,7 +27,7 @@
             if(this._contributors != null) {
                 var src = document.querySelector('#contributors-list-template').innerHTML;
                 var compiled = Handlebars.compile(src);
-                document.querySelector('.gcontributors').innerHTML = compiled(this._contributors);
+                document.querySelector('.contributors').innerHTML = compiled(this._contributors);
             }
         }
     }
