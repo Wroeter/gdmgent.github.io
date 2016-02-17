@@ -117,8 +117,8 @@
     
     <!-- Contributors list -->
     <script id="contributors-list-template" type="text/x-handlebars-template">
-        {{#if this}}
-            {{#each this}}
+        {{#if this.contributors}}
+            {{#each this.contributors}}
             <div class="flex-grid__column-bp1-12 flex-grid__column-bp3-6 flex-grid__column-bp4-4 flex-grid__column-bp5-3">
                 <artcile class="contributor" data-id="{{id}}">
                     
