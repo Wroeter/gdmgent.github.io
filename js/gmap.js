@@ -56,12 +56,14 @@ var GMap = {
     },
     setStyles: function(styles) {
         var styledMap = new google.maps.StyledMapType(styles, {name: "gdm.gent Styled Map"});
-        //Associate the styled map with the MapTypeId and set it to display.
+        // Associate the styled map with the MapTypeId and set it to display.
         this._map.mapTypes.set('map_style', styledMap);
         this._map.setMapTypeId('map_style');
     },
     refresh: function() {
         google.maps.visualRefresh = true;
-        google.maps.event.trigger(this.map,'resize');
+        google.maps.event.trigger(this.map, 'resize');
+        
+        //this._map.setCenter(new google.maps.LatLng(this._companyLocationMarker.position.lat, this._companyLocationMarker.position.lng)); 
     }
 };

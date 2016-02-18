@@ -15,9 +15,12 @@
 			if(this._gMap == null) {
 				this.checkGoogleMapsInitialized();
 			}
-			if(this._geoLocation == null) {
-				this.getGeoLocation();
-			}
+            
+            var self = this;
+            this.resizeGoogleMaps();
+            window.addEventListener('resize', function(ev) {
+                self.resizeGoogleMaps();
+            });
 		},
 		checkGoogleMapsInitialized: function() {
             var self = this;
@@ -33,21 +36,6 @@
                 this.loadGoogleMapsStyles();
             }
         },
-		getGeoLocation: function() {
-			var self = this;
-			
-			Utils.getGEOLocationByPromise().then(
-				function(location) {
-					self._geoLocation = location;
-					if(self._gMap != null) {
-						self._gMap.addMarkerGeoLocation(location);
-					}
-				},
-				function(error) {
-					self._geoLocation = null;
-				}
-			)
-		},
         loadGoogleMapsStyles: function() {
             var self = this;
 			
@@ -61,6 +49,11 @@
                     console.log(error);
 				}
 			)
+        },
+        resizeGoogleMaps: function() {
+            var h = $(window).height() - $('#gmap').offset().top;
+            document.querySelector('#gmap').style.height = h + 'px';
+            this._gMap.refresh();
         }
 	};
 	
