@@ -34,8 +34,10 @@ var GMap = {
         google.maps.visualRefresh = true;
         google.maps.event.trigger(this._map, 'resize');
         this._geoLocationMarker = null, this._companyLocationMarker = null;
+        this._companyLocation = null;
     },
     addCompany: function(lat, lng) {
+        this._companyLocation = new google.maps.LatLng(lat, lng);
         this._companyLocationMarker = new google.maps.Marker({
             position: new google.maps.LatLng(lat, lng),
             title:"gdm.gent",
@@ -62,8 +64,11 @@ var GMap = {
     },
     refresh: function() {
         google.maps.visualRefresh = true;
-        google.maps.event.trigger(this.map, 'resize');
+        google.maps.event.trigger(this._map, 'resize');
         
-        //this._map.setCenter(new google.maps.LatLng(this._companyLocationMarker.position.lat, this._companyLocationMarker.position.lng)); 
+        if(this._map != null) {
+            console.log(this._companyLocationMarker);
+            this._map.setCenter(this._companyLocation); 
+        }
     }
 };

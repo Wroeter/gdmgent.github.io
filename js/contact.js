@@ -53,7 +53,10 @@
         resizeGoogleMaps: function() {
             var h = $(window).height() - $('#gmap').offset().top;
             document.querySelector('#gmap').style.height = h + 'px';
-            this._gMap.refresh();
+            
+            if(this._gMap != null) {
+                this._gMap.refresh();
+            }
         }
 	};
 	
