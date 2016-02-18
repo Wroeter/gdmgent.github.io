@@ -52,12 +52,13 @@
             var self = this;
 			
 			Utils.getJSONByPromise('gmap_styles.json').then(
-				function(styles) {
+				function(data) {
 					if(self._gMap != null) {
-						self._gMap.setStyles(styles);
+						self._gMap.setStyles(data.styles);
 					}
 				},
 				function(error) {
+                    console.log(error);
 				}
 			)
         }
