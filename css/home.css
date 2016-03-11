@@ -104,11 +104,16 @@
    Contact styles
    ========================================================================== */
 .contact-wrapper {
+    position: relative;
     background: rgba(255, 0, 70, 1);
 }
 
 #gmap {
+    position: absolute;
     width: 100%;
     min-height: 280px;
     margin-top: 1rem;
+    
+    bottom: 0;
+    left: 0;
 }
