@@ -98,6 +98,17 @@
 .contact-wrapper {
     min-height: 100vh;
 }
+
+
+/* ==========================================================================
+   Contact styles
+   ========================================================================== */
 .contact-wrapper {
     background: rgba(255, 0, 70, 1);
+}
+
+#gmap {
+    width: 100%;
+    min-height: 280px;
+    margin-top: 1rem;
 }
