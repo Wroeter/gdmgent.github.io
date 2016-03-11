@@ -90,3 +90,14 @@
 		align-self: auto;
 	}
 }
+
+/* ==========================================================================
+   Lecturers styles
+   ========================================================================== */
+.lecturers-wrapper,
+.contact-wrapper {
+    min-height: 100vh;
+}
+.contact-wrapper {
+    background: rgba(255, 0, 70, 1);
+}
