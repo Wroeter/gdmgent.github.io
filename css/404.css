@@ -1,21 +1,21 @@
 /* ==========================================================================
    Home styles
    ========================================================================== */
-   
+
+
 .four-zero-four-wrapper {
-	background: rgba(69, 53, 237, 1) url('./images/404.jpg') no-repeat center center scroll;
-	background-size: cover;
-    
+    background: rgba(69, 53, 237, 1) url('./images/404.jpg') no-repeat center center scroll;
+    background-size: cover;
     color: rgba(252, 252, 252, 1);
 }
 
 .four-zero-four-wrapper h1 {
-	color: rgba(252, 252, 252, 1);
-	background: transparent;
-	border-bottom-width: 0;
-	padding: 0;
-	
-	font-size: 4rem;
+    color: rgba(252, 252, 252, 1);
+    background: transparent;
+    border-bottom-width: 0;
+    padding: 0;
+
+    font-size: 4rem;
 }
 
 .flex-hero__main-center-content {
@@ -23,36 +23,36 @@
 }
 
 .figure--hero {
-	margin: 0;
-	width: 100%;
-	position: relative;
+    margin: 0;
+    width: 100%;
+    position: relative;
 }
 
 .figure__caption {
-	text-align: center;
+    text-align: center;
 }
 
 .figure__caption h1 {
-	font-size: 4.8rem;
+    font-size: 4.8rem;
 }
 
 .figure__caption abbr {
-	border-bottom-color: rgba(69, 53, 237, 1);
+    border-bottom-color: rgba(255, 150, 0, 1);
 }
 
 .caption__inner {
-	font-size: 1.2rem;
-	font-weight: 300;
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 
 .caption__inner a {
-	color: rgba(255, 255, 255, 1);
-	text-decoration: none;
-	border-bottom:2px solid transparent;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    border-bottom:2px solid transparent;
 }
 
 .caption__inner a:hover {
-	border-bottom-color: rgba(255, 255, 255, 1);
+    border-bottom-color: rgba(255, 255, 255, 1);
 }
 
 .caption__inner a.btn {
@@ -60,7 +60,7 @@
     margin-bottom: 1rem;
     padding: 8px 16px;
     box-sizing: border-box;
-    
+
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 1rem;
@@ -68,25 +68,25 @@
     text-decoration: none;
     letter-spacing: .2em;
     color: #fff;
-    
-    border: 4px solid rgba(69, 53, 237, 1);
+
+    border: 4px solid rgba(255, 150, 0, 1);
     border-radius: 4px;
-    
+
     transition: all 268ms ease-out 0s;
 }
 
 .caption__inner a.btn:focus,
 .caption__inner a.btn:hover {
-    background: rgba(69, 53, 237, 1);
-    
+    background: rgba(255, 150, 0, 1);
+
     transition: all 268ms ease-out 0s;
 }
 
 @media (min-width: 60rem) {
     .figure__caption {
-		text-align: center;
-	}
-	.flex-hero__main-center-content {
-		align-self: auto;
-	}
+        text-align: center;
+    }
+    .flex-hero__main-center-content {
+        align-self: auto;
+    }
 }

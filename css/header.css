@@ -1,32 +1,23 @@
 /* ==========================================================================
-   Header styles
+   Offcanvas Content Header
    ========================================================================== */
-   
-.header-wrapper {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: 998;
-	
-	background: rgba(40,53,147 ,0);
-    color: rgba(252, 252, 252, 1);
-}
-.header {
-	padding-top: .5rem;
-	margin-bottom: .5rem;
+
+.offcanvas__content-header {
+    width: 100%;
 }
 
-/* ==========================================================================
-   Logo
-   ========================================================================== */
-   
-.logo {
-    float: right;
+.offcanvas__content-header .logo {
+    float: none;
+    margin-top: 0.5rem;
+    
+    text-align: center;
+    
+    color: rgba(252, 252, 252, 1);
 }
-.logo__tagline {
+
+.offcanvas__content-header .logo__tagline {
     margin: 0;
-    display: none;
+    display: block;
     
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -38,10 +29,12 @@
     border-radius: 5px;
     padding: 5px;
 }
-.logo__graphic {
+.offcanvas__content-header .logo__graphic {
     max-width: 8rem;
     display: block;
     margin-bottom: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
     
     border: 4px solid rgba(252, 252, 252, 1);
     border-radius: 4px;
@@ -52,22 +45,9 @@
 }
 
 @media (min-width: 30rem) {
-    .logo {
-        float: none;
-        text-align: center;
-    }
-    .logo__graphic {
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .logo__tagline {
-        display: block;
-    }
+    
 }
 
 @media (min-width: 60rem) {
-    .logo {
-        float: left;
-        text-align: left;
-    }
+    
 }

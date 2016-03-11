@@ -1,0 +1,217 @@
+/* ==========================================================================
+   Offcanvas Content
+   ========================================================================== */
+.offcanvas__content {
+    position: relative;
+    background: rgba(69, 53, 237, 1);
+    height: 100vh;
+    min-height: 100vh;
+    
+    transition: all 386ms ease 0s;
+}   
+
+.offcanvas__content-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 998;
+    display: none;
+    
+    background: rgba(16, 16, 16, 0.68);
+}
+
+.offcanvas__content-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 997;
+    
+    min-height: 68px;
+}
+
+.offcanvas__toggle--open {
+    position: absolute;
+    text-decoration: none;
+    color: rgba(232, 232, 232, 1);
+    top: 0;
+    left: 0;
+    padding: .1rem .4rem;
+    font-size: 2rem;
+    background-color: rgba(232, 232, 232, 0.16);
+    
+    transition: all 386ms ease 0s;
+}
+
+.offcanvas__toggle--open > .fa {
+    position: relative;
+    
+    transform: rotate(0deg);
+    transition: all 386ms ease 0s;
+}
+
+.offcanvas__toggle--open:focus,
+.offcanvas__toggle--open:hover {
+    background:rgba(232, 232, 232, 0.68);
+}
+
+.js__offcanvas-is-open .offcanvas__toggle--open > .fa {
+    transform: rotate(90deg);
+    
+    transition: all 386ms ease 0s;
+}
+
+.js__offcanvas-is-open .offcanvas__content-overlay {
+    display: block;
+}
+
+/* ==========================================================================
+   Offcanvas Sidebar
+   ========================================================================== */
+.offcanvas__sidebar {
+    position: fixed;
+    width: 80%;
+	max-width: 280px;
+    min-height: 100vh;
+    top: 0;
+    background-color: #eee;
+    z-index: 999;
+    
+    transition: all 386ms ease 0s;
+}
+
+.offcanvas__sidebar-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+}
+
+.offcanvas__toggle--close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: .1rem .4rem;
+    font-size: 2rem;
+    color: rgba(232, 232, 232, 1);
+    background-color: rgba(69, 53, 237, 1);
+    
+    transition: all 386ms ease 0s;
+}
+.offcanvas__toggle--close > .fa {
+    position: relative;
+    
+    transform: rotate(0deg);
+    transition: all 386ms ease 0s;
+}
+.offcanvas__toggle--close:focus,
+.offcanvas__toggle--close:hover {
+    background-color: rgba(232, 232, 232, 1);
+    color: rgba(69, 53, 237, 1);
+    
+    transition: all 386ms ease 0s;
+}
+
+.js__offcanvas-is-open .offcanvas__sidebar {
+    transition: all 386ms ease 0s;
+}
+
+.js__offcanvas-is-open .offcanvas__toggle--close > .fa {
+    transform: rotate(360deg);
+    
+    transition: all 386ms ease 0s;
+}
+
+/* ==========================================================================
+   Offcanvas Navigation
+   ========================================================================== */
+.offcanvas__nav > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav__item-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    
+    text-decoration: none;
+    font-weight: 700;
+    outline: 0;
+    
+    border-bottom: 1px solid rgba(212, 212, 212, 1);
+    color: rgba(69, 53, 237, 1);
+}
+.nav__item-link:focus,
+.nav__item-link:hover {
+    background: rgba(69, 53, 237, 1);
+    color: rgba(232, 232, 232, 1);
+}
+.nav__item-link--active {
+    background: rgba(69, 53, 237, 1);
+    color: rgba(232, 232, 232, 1);
+}
+
+/* ==========================================================================
+   Offcanvas Sidebar Header
+   ========================================================================== */
+.offcanvas__sidebar-header {
+    
+}
+
+.offcanvas__sidebar-header .logo {
+    margin: 0;
+    padding: 0;
+}
+
+.offcanvas__sidebar-header .logo > a {
+    display: block;
+    background: url('images/nav__header.jpg') no-repeat left top;
+    background-size: cover;
+    
+    width: 100%;
+    height: 200px;
+}
+
+.offcanvas__sidebar-header .logo > a > span {
+    display: none;
+}
+
+/* ==========================================================================
+   Offcanvas Sidebar Footer
+   ========================================================================== */
+.offcanvas__sidebar-footer {
+    width: 100%;
+}
+.socialmedia {
+    width: 100%;
+}
+.socialmedia__link {
+    float: left;
+    width: 20%;
+    padding: 12px 0;
+    
+    font-size: 24px;
+    text-align: center;
+    color: rgba(69, 53, 237, 1);
+}
+.socialmedia__link--facebook:focus,
+.socialmedia__link--facebook:hover {
+    color: rgba(59,89,153 ,1);
+}
+.socialmedia__link--twitter:focus,
+.socialmedia__link--twitter:hover {
+    color: rgba(85,172,238 ,1);
+}
+.socialmedia__link--linkedin:focus,
+.socialmedia__link--linkedin:hover {
+    color: rgba(0,119,181 ,1);
+}
+.socialmedia__link--website:focus,
+.socialmedia__link--website:hover {
+    color: rgba(229,45,39 ,1);
+}
+.socialmedia__link--email:focus,
+.socialmedia__link--email:hover {
+    color: rgba(0,180,137 ,1);
+}

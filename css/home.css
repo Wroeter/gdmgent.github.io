@@ -17,7 +17,7 @@
 }
 
 .flex-hero__main-center-content {
-    
+    align-self: flex-end;
 }
 
 .figure--hero {
@@ -28,7 +28,6 @@
 
 .figure__caption {
 	text-align: center;
-    text-shadow: 0 0 1px rgba(16, 16, 16, 1);
 }
 
 .figure__caption h1 {
@@ -36,7 +35,7 @@
 }
 
 .figure__caption abbr {
-	background: rgba(255, 0, 70, 1);
+	border-bottom-color: rgba(255, 0, 70, 1);
 }
 
 .caption__inner {
@@ -84,6 +83,7 @@
 @media (min-width: 60rem) {
     .figure__caption {
 		max-width: 500px;
+		float: right;
 		text-align: left;
 	}
 	.flex-hero__main-center-content {

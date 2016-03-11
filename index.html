@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <!--[if lt IE 7]><html class="no-js lt-ie7" lang="nl" dir="ltr"><![endif]-->
 <!--[if IE 7]><html class="no-js lt-ie8" lang="nl" dir="ltr"><![endif]-->
 <!--[if IE 8]><html class="no-js lt-ie9" lang="nl" dir="ltr" prefix="og: http://ogp.me/ns#"><![endif]-->
@@ -6,22 +6,22 @@
 <!--[if (gt IE 9)|!(IE)]><!--><html class="no-js" lang="nl" dir="ltr" prefix="og: http://ogp.me/ns#"><!--
 <![endif]-->
 <head>  
-    <!-- Character encoding -->
+    <!-- Character Encoding -->
     <meta charset="utf-8"> 
-    <!-- Latest version of certain rendering browserengines -->
+    <!-- Latest version of certain rendering browser engines -->
     <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
     <!-- Title -->
     <title>gdm.gent | Web and New Media | Artevelde University College Ghent</title>
-    <!-- Other SEO tags -->	
-	<meta name="description" content="gdm.gent frontend boilerplate for the mass. We want the share all or knowledge on webtechnologies with you all :)">
-	<meta name="keywords" content="HTML5, CSS3, JavaScript, jQuery, Responsive, Grid">
-	<meta name="author" content="gdm.gent | Bachelor of Graphic and Digital Media | Artevelde University College Ghent">
-	<meta name="copyright" content="Copyright 2010-16 Artevelde University College Ghent. All Rights Reserved.">
+    <!-- Other SEO Tags -->
+    <meta name="description" content="gdm.gent for the mass. We want the share all or knowledge on webtechnologies with you all :)">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript, jQuery, Responsive, Grid">
+    <meta name="author" content="gdm.gent | Bachelor of Graphic and Digital Media | Artevelde University College Ghent">
+    <meta name="copyright" content="Copyright 2010-16 Artevelde University College Ghent. All Rights Reserved.">
     <!-- Sitemap.xml -->
     <link rel="sitemap" type="application/xml" title="Sitemap" href="./sitemap.xml">
     <!-- Humans.txt -->
     <link rel="author" type="text/plain" href="./humans.txt">
-    <!-- Mobile viewport -->
+    <!-- Mobile Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="57x57" href="./css/images/favicons/apple-touch-icon-57x57.png">
@@ -49,125 +49,163 @@
     <meta name="msapplication-TileColor" content="#4535ed">
     <meta name="msapplication-TileImage" content="./css/images/favicons/mstile-144x144.png">
     <meta name="msapplication-config" content="./css/images/favicons/browserconfig.xml">
-    <meta name="msapplication-tooltip" content="gdm.gent frontend boilerplate for the mass. We want the share all or knowledge on webtechnologies with you all :)">
+    <meta name="msapplication-tooltip" content="gdm.gent for the mass. We want the share all or knowledge on webtechnologies with you all :)">
     <meta name="msapplication-navbutton-color" content="#4535ed">
     <meta name="theme-color" content="#4535ed">
-    <!-- Social media -->
+    <!-- Social Media -->
     <meta property="og:title" content="gdm.gent | Web and New Media | Artevelde University College Ghent">
-    <meta property="og:description" content="gdm.gent frontend boilerplate for the mass. We want the share all or knowledge on webtechnologies with you all :)">
+    <meta property="og:description" content="gdm.gent for the mass. We want the share all or knowledge on webtechnologies with you all :)">
     <meta property="og:type" content="website">
     <meta property="og:image" content="./css/images/favicons/android-chrome-192x192.png">
-    <!-- DNS prefetching -->
+    <!-- DNS Prefetching -->
     <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
     <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <!-- Stylesheets -->
+    <!-- Style Sheets -->
     <link rel="stylesheet" href="vendor/normalize-css/normalize.css">
     <link rel="stylesheet" href="css/helpers.css">
     <link rel="stylesheet" href="css/flex-grid.css">
     <link rel="stylesheet" href="css/flex-hero.css">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/offcanvas.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/arcade.css">
     <link rel="stylesheet" href="css/home.css">
     <!-- Modernizr -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script>window.Modernizr || document.write('<script src="vendor/modernizr-dev/modernizr.min.js">\x3C/script>')</script>
 </head>
-<body>	
-	<!-- Header -->
-	<div class="flex-grid__wrapper header-wrapper">
-		<div class="flex-grid__container">
-			<div class="flex-grid__row">
-				<div class="flex-grid__column-bp1-12">
-					<header class="header">
-						<div class="logo">
-							<span class="logo__graphic"><span class="fa fa-rocket"></span></span>
-							<span class="logo__tagline">gdm.gent</span>
-						</div>
-						<a href="#" class="nav-toggle nav-toggle--open icon--open"><span>Toggle</span></a>
-						<nav class="nav nav--primary" role="navigation">
-                            <header class="nav__header">
-                                <a href="#" class="nav-toggle nav-toggle--close icon--close"><span>Close</span></a>
-                            </header>
-							<ul class="nav__list">
-								<li class="nav__item nav__item--active"><a class="nav__item-link nav__item-link--active" href="./">Home</a></li>
-								<li class="nav__item"><a class="nav__item-link" href="./about/">About</a></li>
-								<li class="nav__item"><a class="nav__item-link" href="./repositories">Repositories</a></li>
-								<li class="nav__item"><a class="nav__item-link" href="./about/contact.html">Contact</a></li>
-							</ul>
-                            <footer class="nav__footer">
-                                <section class="socialmedia clearfix">
-                                    <a class="socialmedia__link socialmedia__link--facebook" href="https://www.facebook.com/GrafischeendigitalemediaArteveldehogeschool/"><span class="fa fa-facebook"></span></a>
-                                    <a class="socialmedia__link socialmedia__link--twitter" href="https://twitter.com/ArteveldeGdm"><span class="fa fa-twitter"></span></a>
-                                    <a class="socialmedia__link socialmedia__link--linkedin" href="https://www.linkedin.com/groups/1984530"><span class="fa fa-linkedin"></span></a>
-                                    <a class="socialmedia__link socialmedia__link--website" href="https://www.arteveldehogeschool.be/bachelor-de-grafische-en-digitale-media"><span class="fa fa-globe"></span></a>
-                                    <a class="socialmedia__link socialmedia__link--email" href="mailto:info.grafischedigitalemedia@arteveldehs.be"><span class="fa fa-envelope"></span></a>
-                                </section>
-                            </footer>			
-						</nav>
-					</header>
-				</div>
-			</div>
-		</div>
-	</div><!-- End Header -->
-	
-	<!-- Home -->
-	<div class="flex-hero hero-bkgnd home-wrapper" id="home">
-		<div class="flex-hero__container">
-			<div class="flex-hero__header">
-			</div>
-			<div class="flex-hero__main">
-				<div class="flex-hero__main-left">
-				</div>
-				<div class="flex-hero__main-center">
-					<div class="flex-hero__main-center-content">
-						<div class="flex-grid__container">
-							<div class="flex-grid__row">
-                                <div class="flex-grid__column-bp1-12 flex-grid__column-bp3-6">
-                                    <div class="arcade"></div>
-								</div>
-								<div class="flex-grid__column-bp1-12 flex-grid__column-bp3-6">
-									<figure class="figure--hero">
-										<figcaption class="figure__caption">
-											<h1>Hi there! We are <abbr title="Bachelor of Graphic and Digital Media at Artevelde University College Ghent">GDM Gent</abbr>!</h1>
-											<div class="caption__inner ">
-                                                <p>We educate future talents in <strong>Design</strong> for <strong>Print</strong> and Non-Print,
-                                                <strong>Web</strong>- and <strong>App Development</strong>, <strong>Audio</strong> and <strong>Video</strong> Production, <strong>2D</strong>- and <strong>3D Animations</strong>,
-                                                Printing and <strong>Packaging</strong> and the whole <strong>Management</strong> of those <strong>workflows</strong>!</p>
-												<a href="./about" class="btn">Read more About us</a>
-											</div>
-										</figcaption>
-									</figure>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="flex-hero__main-right">
-				</div>
-			</div>
-			<div class="flex-hero__footer ">
-			</div>
-		</div>
-	</div><!-- End Home -->
+<body data-offcanvas-direction="left" data-offcanvas-type="over">
     
+    <!-- .offcanvas__sidebar -->
+    <div class="offcanvas__sidebar">
+        <header class="offcanvas__sidebar-header">
+            <h1 class="logo"><a href="#home"><span>gdm.gent</span></a></h1>
+            <a class="offcanvas__toggle--close" href="#"><span class="fa fa-times"></span></a>
+        </header>
+        <nav class="offcanvas__nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__item-link nav__item-link--active" href="#home" title="">Home</a></li>
+                <li class="nav__item"><a class="nav__item-link" href="#lecturers" title="">Lecturers</a></li>
+                <li class="nav__item"><a class="nav__item-link" href="#contact" title="">Contact</a></li>
+            </ul>
+        </nav>
+        <footer class="offcanvas__sidebar-footer">
+            <section class="socialmedia clearfix">
+                <a class="socialmedia__link socialmedia__link--facebook" href="https://www.facebook.com/GrafischeendigitalemediaArteveldehogeschool/"><span class="fa fa-facebook"></span></a>
+                <a class="socialmedia__link socialmedia__link--twitter" href="https://twitter.com/ArteveldeGdm"><span class="fa fa-twitter"></span></a>
+                <a class="socialmedia__link socialmedia__link--linkedin" href="https://www.linkedin.com/groups/1984530"><span class="fa fa-linkedin"></span></a>
+                <a class="socialmedia__link socialmedia__link--website" href="https://www.arteveldehogeschool.be/bachelor-de-grafische-en-digitale-media"><span class="fa fa-globe"></span></a>
+                <a class="socialmedia__link socialmedia__link--email" href="mailto:info.grafischedigitalemedia@arteveldehs.be"><span class="fa fa-envelope"></span></a>
+            </section>
+        </footer>
+    </div><!-- /.offcanvas__sidebar -->
+    
+    <!-- .offcanvas__content -->
+    <div class="offcanvas__content">
+        <div class="offcanvas__content-overlay"></div>
+        <header class="offcanvas__content-header">
+            <div class="logo">
+                <span class="logo__graphic"><span class="fa fa-rocket"></span></span>
+                <span class="logo__tagline">gdm.gent</span>
+            </div>
+            <a class="offcanvas__toggle--open" href="#"><span class="fa fa-bars"></span></a>
+        </header>
+        <!-- #home -->
+        <div class="flex-hero hero-bkgnd home-wrapper" id="home">
+            <div class="flex-hero__container">
+                <div class="flex-hero__header">
+                </div>
+                <div class="flex-hero__main">
+                    <div class="flex-hero__main-left">
+                    </div>
+                    <div class="flex-hero__main-center">
+                        <div class="flex-hero__main-center-content">
+                            <div class="flex-grid__container">
+                                <div class="flex-grid__row">
+                                    <div class="flex-grid__column-bp1-12 flex-grid__column-bp3-6">
+                                        <div class="arcade"></div>
+                                    </div>
+                                    <div class="flex-grid__column-bp1-12 flex-grid__column-bp3-6">
+                                        <figure class="figure--hero">
+                                            <figcaption class="figure__caption">
+                                                <h1>Hi there! We are <abbr title="Bachelor of Graphic and Digital Media at Artevelde University College Ghent">GDM Gent</abbr>!</h1>
+                                                <div class="caption__inner ">
+                                                    <p>We educate future talents in <strong>Design</strong> for <strong>Print</strong> and Non-Print,
+                                                    <strong>Web</strong>- and <strong>App Development</strong>, <strong>Audio</strong> and <strong>Video</strong> Production, <strong>2D</strong>- and <strong>3D Animations</strong>,
+                                                    Printing and <strong>Packaging</strong> and the whole <strong>Management</strong> of those <strong>workflows</strong>!</p>
+                                                    <a href="#lecturers" class="btn">Read more About us</a></p>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-hero__main-right">
+                    </div>
+                </div>
+                <div class="flex-hero__footer ">
+                </div>
+            </div>
+        </div><!-- /#home -->
+        <!-- #lecturers -->
+        <div class="flex-hero hero-bkgnd lecturers-wrapper" id="lecturers">
+            <div class="flex-hero__container">
+                <div class="flex-hero__header">
+                </div>
+                <div class="flex-hero__main">
+                    <div class="flex-hero__main-left">
+                    </div>
+                    <div class="flex-hero__main-center">
+                        <div class="flex-hero__main-center-content">
+                            <div class="flex-grid__container">
+                                <div class="flex-grid__row">
+                                    <div class="flex-grid__column-bp1-12 flex-grid__column-bp3-6">
+                                        <div class="arcade"></div>
+                                    </div>
+                                    <div class="flex-grid__column-bp1-12 flex-grid__column-bp3-6">
+                                        <figure class="figure--hero">
+                                            <figcaption class="figure__caption">
+                                                <h1>Hi there! We are <abbr title="Bachelor of Graphic and Digital Media at Artevelde University College Ghent">GDM Gent</abbr>!</h1>
+                                                <div class="caption__inner ">
+                                                    <p>We educate future talents in <strong>Design</strong> for <strong>Print</strong> and Non-Print,
+                                                    <strong>Web</strong>- and <strong>App Development</strong>, <strong>Audio</strong> and <strong>Video</strong> Production, <strong>2D</strong>- and <strong>3D Animations</strong>,
+                                                    Printing and <strong>Packaging</strong> and the whole <strong>Management</strong> of those <strong>workflows</strong>!</p>
+                                                    <a href="#lecturers" class="btn">Read more About us</a></p>
+                                                </div>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-hero__main-right">
+                    </div>
+                </div>
+                <div class="flex-hero__footer ">
+                </div>
+            </div>
+        </div><!-- /#lecturers -->
+    </div><!-- /.offcanvas__content -->
+
     <!-- Bottom scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="./vendor/jquery/jquery.min.js">\x3C/script>')</script>
-    <script src="./js/base.js"></script>
-    <script src="./js/arcade.js"></script>
-    
-    <!-- Google Analytics -->
+    <script>window.jQuery || document.write('<script src="vendor/jquery/jquery.min.js">\x3C/script>')</script>
+    <script src="js/base.js"></script>
+    <script src="js/arcade.js"></script>
+    <script src="js/home.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
-    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-    e.src='https://www.google-analytics.com/analytics.js';
-    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-    ga('create','UA-73973321-1','auto');ga('send','pageview');
-    </script>
-    
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-73973321-1','auto');ga('send','pageview');
+    </script><!-- /Google Analytics -->
 </body>
 </html>
