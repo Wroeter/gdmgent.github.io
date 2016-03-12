@@ -41,6 +41,16 @@
                 });
                 
             });
+            
+            /// Register waypoint for changing to look and feel of the header
+            $('#lecturers').waypoint(function(direction){
+                if(direction == 'down'){
+                    $('.offcanvas__content-header').addClass('offcanvas__content-header--contentscrolled');
+                } else {
+                    $('.offcanvas__content-header').removeClass('offcanvas__content-header--contentscrolled');
+                }
+            }, { offset: '65%' } );
+            
 		},
 		checkGoogleMapsInitialized: function() {
             var self = this;
@@ -62,7 +72,7 @@
 			Utils.getJSONByPromise('./data/gmap_styles.json').then(
 				function(data) {
 					if(self._gMap != null) {
-						self._gMap.setStyles(data.styles);
+						self._gMap.setStyles(data);
 					}
 				},
 				function(error) {

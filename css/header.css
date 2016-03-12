@@ -4,6 +4,7 @@
 
 .offcanvas__content-header {
     width: 100%;
+    background: transparent;
 }
 
 .offcanvas__content-header .logo {
@@ -42,6 +43,10 @@
     
     font-size: 2rem;
     text-align: center;
+}
+
+.offcanvas__content-header--contentscrolled {
+    background: rgba(69, 53, 237, 1);
 }
 
 @media (min-width: 30rem) {
