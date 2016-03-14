@@ -99,6 +99,31 @@
     min-height: 100vh;
 }
 
+.lecturer {
+    background: rgba(248, 248, 248, 1);
+}
+
+.lecturer__picture {
+    width: 100%;
+    overflow: hidden;
+}
+
+.lecturer__picture > img {
+    width: 100%;
+}
+
+.lecturer__name {
+    
+}
+
+.lecturer__quote {
+    
+}
+
+.lecturer__links {
+    
+}
+
 
 /* ==========================================================================
    Contact styles
@@ -109,11 +134,5 @@
 }
 
 #gmap {
-    position: absolute;
-    width: 100%;
-    min-height: 280px;
-    margin-top: 1rem;
-    
-    bottom: 0;
-    left: 0;
+    min-height: 100vh;
 }
