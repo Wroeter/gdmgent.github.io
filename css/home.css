@@ -99,6 +99,11 @@
     min-height: 100vh;
 }
 
+.flex-grid__wrapper-gap {
+    height: 91px;
+    max-height: 91px;
+}
+
 .lecturer {
     background: rgba(248, 248, 248, 1);
 }
@@ -122,6 +127,35 @@
 
 .lecturer__links {
     
+}
+
+.lecturer__link {
+    display: inline-block;
+    padding: 1rem;
+}
+.lecturer__link--facebook:focus,
+.lecturer__link--facebook:hover {
+    color: rgba(59,89,153 ,1);
+}
+.lecturer__link--twitter:focus,
+.lecturer__link--twitter:hover {
+    color: rgba(85,172,238 ,1);
+}
+.lecturer__link--linkedin:focus,
+.lecturer__link--linkedin:hover {
+    color: rgba(0,119,181 ,1);
+}
+.lecturer__link--website:focus,
+.lecturer__link--website:hover {
+    color: rgba(229,45,39 ,1);
+}
+.lecturer__link--email:focus,
+.lecturer__link--email:hover {
+    color: rgba(0,180,137 ,1);
+}
+.lecturer__link--github:focus,
+.lecturer__link--github:hover {
+    color: rgba(0,180,137 ,1);
 }
 
 
