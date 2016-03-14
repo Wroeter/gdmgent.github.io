@@ -97,6 +97,7 @@
 .lecturers-wrapper,
 .contact-wrapper {
     min-height: 100vh;
+    padding-bottom: 91px;
 }
 
 .flex-grid__wrapper-gap {
@@ -106,6 +107,7 @@
 
 .lecturer {
     background: rgba(248, 248, 248, 1);
+    margin-bottom: 1rem;
 }
 
 .lecturer__picture {
@@ -118,11 +120,16 @@
 }
 
 .lecturer__name {
+    margin: 0;
+    padding: 1rem;
     
+    background: rgba(69, 53, 237, 1);
+    color: rgba(248, 248, 248, 1);
+    height: 88px;
 }
 
 .lecturer__quote {
-    
+    height: 114px;
 }
 
 .lecturer__links {
