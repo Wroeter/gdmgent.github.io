@@ -16,6 +16,9 @@
 			}
             this._offcanvas.init();
             
+            this._arcade = Arcade;
+            this._arcade.init(document.querySelector('.arcade'), 9, 20, 20);
+            
 			this._geoLocation = null;
 			this._gMap = null;
 			if(this._gMap == null) {
@@ -25,6 +28,12 @@
             var self = this;
             this.resizeGoogleMaps();
             window.addEventListener('resize', function(ev) {
+                var h = $(this).height();
+                var w = $(this).width();
+                var c = Math.min(h, w) / (2 * 9);
+                var cw = (c > 20?20:c), ch = cw;
+                
+                self._arcade.resetCharacter(9, cw, ch);
                 self.resizeGoogleMaps();
             });
             
@@ -72,7 +81,8 @@
                     var frm = off - $(wrapper).prev().height();
                     var stp = $(window).scrollTop();
                     if (stp > frm && stp <= off) {
-                        $(wrapper).find('.space__rocket').css('left', ((stp / off) * $(wrapper).width()) + 'px');
+                        var l = (stp / off) * ($(wrapper).width() - $(wrapper).find('.space__rocket').width() - 20);
+                        $(wrapper).find('.space__rocket').css('left', l + 'px');
                     }
                     
                 });
