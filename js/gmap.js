@@ -67,7 +67,6 @@ var GMap = {
         google.maps.event.trigger(this._map, 'resize');
         
         if(this._map != null) {
-            console.log(this._companyLocationMarker);
             this._map.setCenter(this._companyLocation); 
         }
     }

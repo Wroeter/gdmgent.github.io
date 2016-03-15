@@ -96,9 +96,9 @@
    ========================================================================== */
 .space {
     position: relative;
-    background: -webkit-linear-gradient(rgba(69, 53, 237, 0) 0%, rgba(69, 53, 237, 0.22) 50%, rgba(69, 53, 237, 0) 100%);
-    background: -o-linear-gradient(rgba(69, 53, 237, 0) 0%, rgba(69, 53, 237, 0.22) 50%, rgba(69, 53, 237, 0) 100%);
-    background: linear-gradient(rgba(69, 53, 237, 0) 0%, rgba(69, 53, 237, 0.22) 50%, rgba(69, 53, 237, 0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -webkit-linear-gradient(rgba(69, 53, 237, 0) 0%, rgba(69, 53, 237, 0.12) 50%, rgba(69, 53, 237, 0) 100%);
+    background: -o-linear-gradient(rgba(69, 53, 237, 0) 0%, rgba(69, 53, 237, 0.12) 50%, rgba(69, 53, 237, 0) 100%);
+    background: linear-gradient(rgba(69, 53, 237, 0) 0%, rgba(69, 53, 237, 0.12) 50%, rgba(69, 53, 237, 0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 .space__line {
@@ -134,6 +134,7 @@
    ========================================================================== */
 .lecturers-wrapper,
 .contact-wrapper {
+    position: relative;
     min-height: 100vh;
     padding-bottom: 91px;
 }
@@ -168,7 +169,26 @@
 }
 
 .lecturer__quote {
+    position: relative;
     height: 114px;
+    max-height: 114px;
+    overflow: hidden;
+    padding: 1rem;
+    margin: 0;
+    
+    white-space: wrap;
+    text-overflow: ellipsis;
+}
+
+.lecturer__quote:after {
+  content: "";
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  height: 1.2em;
+  background: linear-gradient(to right, rgba(248, 248, 248, 0), rgba(248, 248, 248, 1) 50%);
 }
 
 .lecturer__links {

@@ -42,6 +42,18 @@
                 
             });
             
+            /// Listen to navigation item click
+            /// Swing to the connected hashtag / bookmark
+            $('a[href="#lecturers"]').on('click', function(ev) {
+
+                ev.preventDefault();
+                
+                self.goToPageWithSelector($( this).attr('href'));
+                
+                return false;
+                
+            });
+            
             /// Register waypoint for changing to look and feel of the header
             $('#lecturers').waypoint(function(direction){
                 if(direction == 'down'){
@@ -50,6 +62,22 @@
                     $('.offcanvas__content-header').removeClass('offcanvas__content-header--contentscrolled');
                 }
             }, { offset: '65%' } );
+            
+            $( window ).on('scroll', function(ev) {
+                
+                $('.space').each(function(i){
+                    
+                    var wrapper = $(this).parent();
+                    var off = $(wrapper).offset().top;
+                    var frm = off - $(wrapper).prev().height();
+                    var stp = $(window).scrollTop();
+                    if (stp > frm && stp <= off) {
+                        $(wrapper).find('.space__rocket').css('left', ((stp / off) * $(wrapper).width()) + 'px');
+                    }
+                    
+                });
+                
+            });
             
 		},
 		checkGoogleMapsInitialized: function() {
