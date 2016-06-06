@@ -11,7 +11,7 @@
 
 
 # -- Error Docs --
-ErrorDocument 404 /404/
+ErrorDocument 404 /404.html
 
 # -- 301 Redirects --
 # Redirect 301 /oldlocation/oldlocation/ /newlocation/
