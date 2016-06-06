@@ -44,9 +44,6 @@ _site
 # Vendor directory
 _assets/vendor/
 
-# GitHub Pages assets directory
-assets/
-
 # Ruby
 Gemfile.lock
 
