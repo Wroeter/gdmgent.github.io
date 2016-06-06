@@ -22,6 +22,7 @@ gulp.task('sass', function() {
     // Write to build dir only for development builds
     // For production builds the revision task writes the assets into the build dir
     .pipe($.if(!isProduction, gulp.dest(config.dest.buildDir)))
+    .pipe($.if(!isProduction, gulp.dest(config.dest.ghDir)))
     // Auto-inject styles into browsers
     .pipe(browserSync.stream());
 });

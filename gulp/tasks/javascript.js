@@ -21,5 +21,6 @@ gulp.task('javascript', function() {
     .pipe(gulp.dest(config.dest.jekyllRoot))
     // Write to build dir only for development builds
     // For production builds the revision task writes the assets into the build dir
+    .pipe($.if(!isProduction, gulp.dest(config.dest.ghDir)))
     .pipe($.if(!isProduction, gulp.dest(config.dest.buildDir)));
 });

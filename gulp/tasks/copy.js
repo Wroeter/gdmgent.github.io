@@ -9,5 +9,6 @@ gulp.task('copy', function() {
   return gulp.src(config.assets)
     // Write to build dir only for development builds
     // For production builds the revision task writes the assets into the build dir
-    .pipe($.if(!isProduction, gulp.dest(config.dist)));
+    .pipe($.if(!isProduction, gulp.dest(config.ghDir)))
+    .pipe($.if(!isProduction, gulp.dest(config.buildDir)));
 });
