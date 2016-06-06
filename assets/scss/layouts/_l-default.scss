@@ -1,0 +1,108 @@
+// --------------------------------------------------
+// Layout default
+// --------------------------------------------------
+
+body, html {
+	width: 100%;
+	min-height: 100%;
+	height: 100%;
+	margin-left: auto;
+    margin-right: auto;
+	padding: 0;
+}
+
+.fs {
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  
+  &__bkgnd {
+    background: rgba(69, 53, 237, 1) no-repeat center top scroll;
+	background-size: cover;
+  }
+   
+  &__container {
+    position: relative;
+	display: flex;
+	flex-direction: column; 
+	flex-wrap: wrap;
+	height: 100%;
+	min-height: 100%;
+    transform: translate3d(0%, 0, 0);
+  }
+  
+  &__header {
+    width: 100%;
+  }
+  
+  &__main {
+    flex: 1 1 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+    width: 100%;
+    
+    &-left {
+      display: flex;
+	  flex-direction: column;
+	  flex-wrap: nowrap;
+	  justify-content: center;
+	  align-content: center;
+	  align-items: center;
+    }
+    
+    &-center {
+      flex: 1 1 auto;
+      display: flex;
+	  flex-direction: column;
+	  flex-wrap: nowrap;
+	  justify-content: center;
+	  align-content: center;
+	  align-items: center;
+      
+      &-content {
+        flex-basis: auto;
+	    align-self: auto;
+	    flex-shrink: 0;
+	    flex-grow: 0;
+	   width: 100%;    
+      }
+      
+    }
+    
+    &-right {
+      display: flex;
+	  flex-direction: column;
+	  flex-wrap: nowrap;
+	  justify-content: center;
+	  align-content: center;
+	  align-items: center;
+    }
+    
+  }
+  
+  &__footer {
+    width: 100%;
+  }
+  
+}
+
+header {
+  @include grid-row;
+  background-color: $light-gray;
+
+  nav {
+    @include grid-column;
+  }
+}
+
+footer {
+  @include grid-row;
+  background-color: $light-gray;
+
+  nav {
+    @include grid-column;
+  }
+}

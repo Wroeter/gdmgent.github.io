@@ -1,0 +1,28 @@
+// --------------------------------------------------
+// Layout index page
+// --------------------------------------------------
+
+main {
+  @include grid-row;
+
+  //other elements
+  //@include grid-column;
+}
+
+.fs__bkgnd--home {
+    background: rgba(69, 53, 237, 1) url('../img/hero.jpg') no-repeat center top scroll;
+}
+
+.fs--home {
+    
+    .fs__title {
+        font-size: 2rem;
+        color: rgba(232, 232, 232, 1);
+        text-transform: uppercase;
+    }
+    
+    .fs__content {
+        font-size: 1.2rem;
+        color: rgba(232, 232, 232, 1);
+    }
+}
