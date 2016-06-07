@@ -41,3 +41,16 @@ incremental:      true
 permalink:        "/blog/:year/:title/"
 paginate_path:    "/blog/page:num"
 paginate:         5
+
+
+# Collections
+collections:
+  projects:
+    output: true
+    
+# Defaults
+defaults:
+  - scope:
+      type: projects
+    values:
+      layout: project
