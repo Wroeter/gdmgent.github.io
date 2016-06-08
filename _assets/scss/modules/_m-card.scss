@@ -1,0 +1,27 @@
+// --------------------------------------------------
+// Module: Card
+// --------------------------------------------------
+
+.card {
+  border: 1px solid #d7d7d7;
+	margin-bottom: 1.5rem;
+	box-shadow: 2px 4px 5px 0px #d7d7d7;
+  
+  &__picture {
+      display: block;
+      height: 180px;
+      width: 100%;
+      overflow: hidden;
+  }
+  
+  &__image {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+  }
+  
+  &__content {
+      
+  }
+  
+}

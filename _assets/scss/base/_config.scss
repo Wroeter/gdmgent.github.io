@@ -8,3 +8,98 @@
 
 $black: #000;
 $white: #fff;
+
+// Cool
+$aqua:  #7fdbff;
+$blue:  #0074d9;
+$navy:  #001f3f;
+$teal:  #39cccc;
+$green: #2ecc40;
+$olive: #3d9970;
+$lime:  #01ff70;
+// Warm
+$yellow:  #ffdc00;
+$orange:  #ff851b;
+$red:     #ff4136;
+$fuchsia: #f012be;
+$purple:  #b10dc9;
+$maroon:  #85144b;
+// Gray Scale
+$white:  #fff;
+$silver: #ddd;
+$grey:   #aaa;
+$black:  #111;
+
+//
+// Artevelde Colors
+// --------------------------------------------------
+$ahs-orange    : #E90;
+$ahs-green     : #BC0;
+$ahs-fuchsia   : #C07;
+$ahs-blue      : #0AC;
+$ahs-lightgrey : #DDD;
+$ahs-midgrey   : #AAA;
+$ahs-darkgrey  : #777;
+$ahs-black     : #000;
+
+//
+// Artevelde Palette
+// --------------------------------------------------
+$ahs-color-palettes: (
+	'orange': (
+		light: mix(white, $ahs-orange, 40%),
+		base: $ahs-orange,
+		dark: mix(black, $ahs-orange, 40%)
+	),
+	'green': (
+		light: mix(white, $ahs-green, 40%),
+		base: $ahs-green,
+		dark: mix(black, $ahs-green, 40%)
+	),
+	'fuchsia': (
+		light: mix(white, $ahs-fuchsia, 40%),
+		base: $ahs-fuchsia,
+		dark: mix(black, $ahs-fuchsia, 40%)
+	),
+	'blue': (
+		light: mix(white, $ahs-blue, 40%),
+		base: $ahs-blue,
+		dark: mix(black, $ahs-blue, 40%)
+	),
+	'lightgrey': (
+		light: mix(white, $ahs-lightgrey, 40%),
+		base: $ahs-lightgrey,
+		dark: mix(black, $ahs-lightgrey, 40%)
+	),
+	'midgrey': (
+		light: mix(white, $ahs-midgrey, 40%),
+		base: $ahs-midgrey,
+		dark: mix(black, $ahs-midgrey, 40%)
+	),
+	'darkgrey': (
+		light: mix(white, $ahs-darkgrey, 40%),
+		base: $ahs-darkgrey,
+		dark: mix(black, $ahs-darkgrey, 40%)
+	),
+	'black': (
+		light: mix(white, $ahs-black, 40%),
+		base: $ahs-black,
+		dark: mix(black, $ahs-black, 40%)
+	)	
+);
+
+@function ahs-color-palette($palette, $tone: 'base') {
+  @return map-get(map-get($ahs-color-palettes, $palette), $tone);
+}
+
+// Returns either a dark or light foreground color, given
+// the background color
+@function ahs-foreground-color($bgcolor, $threshold: .65) {
+  @return if(lightness($bgcolor) >= $threshold, mix(black, $bgcolor, 80%), mix(white, $bgcolor, 80%));
+}
+
+//
+// Testing
+// --------------------------------------------------
+$cb : ahs-color-palette('green', 'base');
+$cf : ahs-foreground-color($cb);
