@@ -3,34 +3,6 @@
 // --------------------------------------------------
 
 //
-// Colors
-// --------------------------------------------------
-
-$black: #000;
-$white: #fff;
-
-// Cool
-$aqua:  #7fdbff;
-$blue:  #0074d9;
-$navy:  #001f3f;
-$teal:  #39cccc;
-$green: #2ecc40;
-$olive: #3d9970;
-$lime:  #01ff70;
-// Warm
-$yellow:  #ffdc00;
-$orange:  #ff851b;
-$red:     #ff4136;
-$fuchsia: #f012be;
-$purple:  #b10dc9;
-$maroon:  #85144b;
-// Gray Scale
-$white:  #fff;
-$silver: #ddd;
-$grey:   #aaa;
-$black:  #111;
-
-//
 // Artevelde Colors
 // --------------------------------------------------
 $ahs-orange    : #E90;
@@ -67,9 +39,11 @@ $ahs-color-palettes: (
 		dark: mix(black, $ahs-blue, 40%)
 	),
 	'lightgrey': (
-		light: mix(white, $ahs-lightgrey, 40%),
+		light: mix(white, $ahs-lightgrey, 80%),
+    lighter: mix(white, $ahs-lightgrey, 40%),
 		base: $ahs-lightgrey,
-		dark: mix(black, $ahs-lightgrey, 40%)
+    darker: mix(black, $ahs-lightgrey, 40%),
+		dark: mix(black, $ahs-lightgrey, 80%)
 	),
 	'midgrey': (
 		light: mix(white, $ahs-midgrey, 40%),
@@ -97,9 +71,3 @@ $ahs-color-palettes: (
 @function ahs-foreground-color($bgcolor, $threshold: .65) {
   @return if(lightness($bgcolor) >= $threshold, mix(black, $bgcolor, 80%), mix(white, $bgcolor, 80%));
 }
-
-//
-// Testing
-// --------------------------------------------------
-$cb : ahs-color-palette('green', 'base');
-$cf : ahs-foreground-color($cb);

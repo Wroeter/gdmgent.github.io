@@ -3,9 +3,10 @@
 // --------------------------------------------------
 
 .card {
-  border: 1px solid #d7d7d7;
+  border: 1px solid ahs-color-palette('lightgrey', 'base');
 	margin-bottom: 1.5rem;
-	box-shadow: 2px 4px 5px 0px #d7d7d7;
+	box-shadow: 2px 4px 5px 0px ahs-color-palette('lightgrey', 'lighter');
+  background: mix(white, $ahs-lightgrey, 96%);
   
   &__picture {
       display: block;
