@@ -1,0 +1,33 @@
+- object-id: webd2
+  name: Webdesign II
+  short: webd2
+  description: Webdesign II
+- object-id: wdad1
+  name: "Web Design & Development I"
+  short: wdad1
+  description: "Web Design & Development I"
+  department-id: mmp
+- object-id: webd3
+  name: Webdesign III
+  short: webd3
+  description: Webdesign III
+- object-id: nmdad1
+  name: "New Media Design & Development I"
+  short: nmdad1
+  description: "New Media Design & Development I"
+  department-id: mmp
+- object-id: nmdad1
+  name: "Web Design & Development I"
+  short: nmdad1
+  description: "New Media Design & Development I"
+  department-id: mmp
+- object-id: nmdad2
+  name: "New Media Design & Development II"
+  short: nmdad2
+  description: "New Media Design & Development II"
+  specialisation-id: prodev
+- object-id: nmdad3
+  name: "New Media Design & Development III"
+  short: nmdad3
+  description: "New Media Design & Development III"
+  specialisation-id: prodev
