@@ -1,0 +1,30 @@
+- object-id: crossmedia
+  name: Crossmedia
+  short: CMO
+  description: Crossmedia
+  department-id: gmb
+- object-id: graphicdesign
+  name: Graphic Design
+  short: GD
+  description: Graphic Design
+  department-id: cmo
+- object-id: photodesign
+  name: Photo Design
+  short: PD
+  description: Photo Design
+  department-id: cmo
+- object-id: printmedia
+  name: Printmedia
+  short: PM
+  description: Printmedia
+  department-id: gmb
+- object-id: prodev
+  name: proDEV
+  short: proDEV
+  description: proDEV
+  department-id: mmp
+- object-id: produce
+  name: proDUCE
+  short: proDUCE
+  description: proDUCE
+  department-id: mmp
