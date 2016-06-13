@@ -17,17 +17,27 @@
   description: "New Media Design & Development I"
   department-id: mmp
 - object-id: nmdad1
-  name: "Web Design & Development I"
-  short: nmdad1
-  description: "New Media Design & Development I"
-  department-id: mmp
+  name: "Web Design & Development II"
+  short: wdad2
+  description: "Web Design & Development II"
+  specialisation-id: prodev
 - object-id: nmdad2
   name: "New Media Design & Development II"
   short: nmdad2
   description: "New Media Design & Development II"
   specialisation-id: prodev
+- object-id: wdad3
+  name: "Web Design & Development III"
+  short: wdad3
+  description: "Web Design & Development III"
+  specialisation-id: prodev
 - object-id: nmdad3
   name: "New Media Design & Development III"
   short: nmdad3
   description: "New Media Design & Development III"
+  specialisation-id: prodev
+- object-id: wdad4
+  name: "Web Design & Development IV"
+  short: wdad4
+  description: "Web Design & Development IV"
   specialisation-id: prodev
