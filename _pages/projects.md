@@ -11,7 +11,7 @@ title: Projects
 		<li class="medium-6 large-4 columns">
 			<article class="card">
 				<picture class="card__picture">
-					<img class="card__image" src="http://i.onionstatic.com/avclub/5199/85/16x9/960.jpg" />
+					<img class="card__image" src="{{ project.thumbnail-url }}" />
 				</picture>
 				<section class="card__content">
 					<h4><a href="{{ project.url }}">{{ project.title }}</a></h4>

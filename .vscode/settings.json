@@ -1,0 +1,7 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    //-------- HTTP configuration --------
+
+	// The proxy setting to use. If not set will be taken from the http_proxy and https_proxy environment variables
+	"http.proxy": "http://proxy.arteveldehs.be:8080"
+}
