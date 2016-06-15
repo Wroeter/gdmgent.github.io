@@ -4,6 +4,8 @@
 [
   {% for project in site.projects %}
     {% assign olod = site.olods | where: "object-id", project.olod-id  | first %}
+    {% assign department = site.departments | where: "object-id", olod.department-id  | first %}
+    {% assign specialisation = site.specialisations | where: "object-id", olod.specialisation-id  | first %}
     {
       "title"           : "{{ project.title | escape }}",
       "academicyear"    : "{{ project.academic-year | escape }}",
@@ -15,7 +17,20 @@
         {% endfor %}
       ],
       "olod"            : {
-        "name" : "{{ olod.name }}"
+        "name"  : "{{ olod.name }}",
+        "short" : "{{ olod.short }}",
+        {% if department != null %}
+        "department" : {
+            "name"  : "{{ department.name }}",
+            "short" : "{{ department.short }}"
+        },
+        {% endif %}
+        {% if specialisation != null %}
+        "specialisation" : {
+            "name"  : "{{ specialisation.name }}",
+            "short" : "{{ specialisation.short }}"
+        }
+        {% endif %}
       }
     }{% unless forloop.last %},{% endunless %}
   {% endfor %}
