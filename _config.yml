@@ -47,6 +47,12 @@ paginate:         5
 collections:
   projects:
     output: true
+  olods:
+    output: false
+  specialisations:
+    output: false
+  departments:
+    output: false
     
 # Defaults
 defaults:

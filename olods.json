@@ -1,0 +1,12 @@
+---
+---
+
+[
+  {% for olod in site.olods %}
+    {
+      "name"           : "{{ olod.name | escape }}",
+      "short"          : "{{ olod.short | escape }}",
+      "description"    : "{{ olod.description | escape }}"
+    }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

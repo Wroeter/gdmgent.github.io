@@ -16,6 +16,17 @@ title: Projects
 				<section class="card__content">
 					<h4><a href="{{ project.url }}">{{ project.title }}</a></h4>
 					{{ project.content }}
+					<section class="card__authors">
+						<ul>
+							{% for student in project.students %}
+								<li>{{ student }}</li>
+							{% endfor %}
+						</ul>
+					</section>
+					<section class="card__category">
+						{% assign olod = site.olods | where: "object-id", project.olod-id  | first %}
+						{{ olod.name }}
+					</section>
 				</section>
 				<section class="card__footer">
 					<a href="{{ project.url }}">Read more</a>

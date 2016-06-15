@@ -3,10 +3,20 @@
 
 [
   {% for project in site.projects %}
+    {% assign olod = site.olods | where: "object-id", project.olod-id  | first %}
     {
       "title"           : "{{ project.title | escape }}",
       "academicyear"    : "{{ project.academic-year | escape }}",
-      "url"             : "{{ site.baseurl }}{{ project.url }}"
+      "url"             : "{{ site.baseurl }}{{ project.url }}",
+      "students"        : [
+        {% for student in project.students %}
+          "{{ student }}"
+          {% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ],
+      "olod"            : {
+        "name" : "{{ olod.name }}"
+      }
     }{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
