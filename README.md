@@ -1,4 +1,5 @@
-# gdm.gent
+gdm.gent
+========
 
 Jekyll (v3) project with Zurb Foundation for Sites (v6.x, sass).
 

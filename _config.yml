@@ -12,8 +12,6 @@ include:
 exclude:
   - "/_assets/"
   - "bower.json"
-  - "composer.json"
-  - "composer.lock"
   - "DOC.md"
   - "Gemfile"
   - "Gemfile.lock"
