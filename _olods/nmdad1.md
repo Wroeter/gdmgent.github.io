@@ -4,4 +4,6 @@ name: "New Media Design & Development I"
 short: nmdad1
 description: "New Media Design & Development I"
 department-id: mmp
+semester: 3
+year: 2
 ---

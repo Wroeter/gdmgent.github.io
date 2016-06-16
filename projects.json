@@ -19,13 +19,26 @@
       "olod"            : {
         "name"  : "{{ olod.name }}",
         "short" : "{{ olod.short }}",
+        "description"    : "{{ olod.description | escape }}",
+        "semester"       : {{ olod.semester }},
+        "year"           : {{ olod.year }}
         {% if department != null %}
+        ,
         "department" : {
             "name"  : "{{ department.name }}",
             "short" : "{{ department.short }}"
-        },
+        }
         {% endif %}
         {% if specialisation != null %}
+        {% assign department = site.departments | where: "object-id", specialisation.department-id  | first %}
+        {% if department != null %}
+        ,
+        "department" : {
+            "name"  : "{{ department.name }}",
+            "short" : "{{ department.short }}"
+        }
+        {% endif %}
+        ,
         "specialisation" : {
             "name"  : "{{ specialisation.name }}",
             "short" : "{{ specialisation.short }}"

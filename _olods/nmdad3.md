@@ -4,4 +4,6 @@ name: "New Media Design & Development III"
 short: nmdad3
 description: "New Media Design & Development III"
 specialisation-id: prodev
+semester: 5
+year: 3
 ---
