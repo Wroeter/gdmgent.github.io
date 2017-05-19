@@ -1,0 +1,169 @@
+// AHS Colors
+$ahs-blue		    : #0591c6 !default;
+$ahs-fuchsia	  	: #c60561 !default;
+$ahs-green		  	: #a4c605 !default;
+$ahs-orange		  	: #e79906 !default;
+$ahs-white		  	: #f6f6f6 !default;
+$ahs-grey			: #d0d0d0 !default;
+$ahs-dark-grey  	: #8c8c8c !default;
+$ahs-black		  	: #2f2f2f !default;
+
+// Base colors for the application
+$default-color  : $ahs-black !default;
+$primary-color  : $ahs-blue !default;
+$color-secondary: $ahs-fuchsia !default;
+$tertiary-color : #575f71 !default;
+$success-color  : $ahs-green !default;
+$info-color     : $ahs-blue !default;
+$warning-color  : $ahs-orange !default;
+$danger-color   : $ahs-fuchsia !default;
+
+// Code Color palette
+$code-color-palette: (
+	color-A: hsl(359,  0%, 50%),
+	color-B: hsl(  0, 70%, 50%),
+	color-C: hsl( 25, 70%, 50%),
+	color-D: hsl( 50, 70%, 50%),
+	color-E: hsl(150, 70%, 50%),
+	color-F: hsl(200, 70%, 50%),
+	color-G: hsl(229, 30%, 50%),
+	color-H: hsl(330, 50%, 50%)
+);
+
+// AHS color palettes for the application based on Ahs colors
+$ahs-color-palettes: (
+	ahs-blue: (
+		light     : mix(white, $ahs-blue, 80%),
+		mid-light : mix(white, $ahs-blue, 40%),
+		base      : $ahs-blue,
+		mid-dark  : mix(black, $ahs-blue, 40%),
+		dark      : mix(black, $ahs-blue, 80%)
+	),
+	ahs-fuchsia: (
+		light     : mix(white, $ahs-fuchsia, 80%),
+		mid-light : mix(white, $ahs-fuchsia, 40%),
+		base      : $ahs-fuchsia,
+		mid-dark  : mix(black, $ahs-fuchsia, 40%),
+		dark      : mix(black, $ahs-fuchsia, 80%)
+	),
+	ahs-green: (
+		light     : mix(white, $ahs-green, 80%),
+		mid-light : mix(white, $ahs-green, 40%),
+		base      : $ahs-green,
+		mid-dark  : mix(black, $ahs-green, 40%),
+		dark      : mix(black, $ahs-green, 80%)
+	),
+	ahs-orange	: (
+		light     : mix(white, $ahs-orange, 80%),
+		mid-light : mix(white, $ahs-orange, 40%),
+		base      : $ahs-orange,
+		mid-dark  : mix(black, $ahs-orange, 40%),
+		dark      : mix(black, $ahs-orange, 80%)
+	),
+	ahs-white: (
+		light     : mix(white, $ahs-white, 80%),
+		mid-light : mix(white, $ahs-white, 40%),
+		base      : $ahs-white,
+		mid-dark  : mix(black, $ahs-white, 40%),
+		dark      : mix(black, $ahs-white, 80%)
+	),
+	ahs-grey: (
+		light     : mix(white, $ahs-grey, 80%),
+		mid-light : mix(white, $ahs-grey, 40%),
+		base      : $ahs-grey,
+		mid-dark  : mix(black, $ahs-grey, 40%),
+		dark      : mix(black, $ahs-grey, 80%)
+	),
+	ahs-dark-grey : (
+		light     : mix(white, $ahs-dark-grey , 80%),
+		mid-light : mix(white, $ahs-dark-grey , 40%),
+		base      : $ahs-dark-grey ,
+		mid-dark  : mix(black, $ahs-dark-grey , 40%),
+		dark      : mix(black, $ahs-dark-grey , 80%)
+	),
+	ahs-black: (
+		light     : mix(white, $ahs-black, 80%),
+		mid-light : mix(white, $ahs-black, 40%),
+		base      : $ahs-black,
+		mid-dark  : mix(black, $ahs-black, 40%),
+		dark      : mix(black, $ahs-black, 80%)
+	)	
+);
+
+// Color palettes for the application based on Base colors
+$color-palettes: (
+	default: (
+		light     : mix(white, $default-color, 80%),
+		mid-light : mix(white, $default-color, 40%),
+		base      : $default-color,
+		mid-dark  : mix(black, $default-color, 40%),
+		dark      : mix(black, $default-color, 80%)
+	),
+	primary: (
+		light     : mix(white, $primary-color, 80%),
+		mid-light : mix(white, $primary-color, 40%),
+		base      : $primary-color,
+		mid-dark  : mix(black, $primary-color, 40%),
+		dark      : mix(black, $primary-color, 80%)
+	),
+	secondary: (
+		light     : mix(white, $color-secondary, 80%),
+		mid-light : mix(white, $color-secondary, 40%),
+		base      : $color-secondary,
+		mid-dark  : mix(black, $color-secondary, 40%),
+		dark      : mix(black, $color-secondary, 80%)
+	),
+	tertiary: (
+		light     : mix(white, $tertiary-color, 80%),
+		mid-light : mix(white, $tertiary-color, 40%),
+		base      : $tertiary-color,
+		mid-dark  : mix(black, $tertiary-color, 40%),
+		dark      : mix(black, $tertiary-color, 80%)
+	),
+	success: (
+		light     : mix(white, $success-color, 80%),
+		mid-light : mix(white, $success-color, 40%),
+		base      : $success-color,
+		mid-dark  : mix(black, $success-color, 40%),
+		dark      : mix(black, $success-color, 80%)
+	),
+	info: (
+		light     : mix(white, $info-color, 80%),
+		mid-light : mix(white, $info-color, 40%),
+		base      : $info-color,
+		mid-dark  : mix(black, $info-color, 40%),
+		dark      : mix(black, $info-color, 80%)
+	),
+	warning: (
+		light     : mix(white, $warning-color, 80%),
+		mid-light : mix(white, $warning-color, 40%),
+		base      : $warning-color,
+		mid-dark  : mix(black, $warning-color, 40%),
+		dark      : mix(black, $warning-color, 80%)
+	),
+	danger: (
+		light     : mix(white, $danger-color, 80%),
+		mid-light : mix(white, $danger-color, 40%),
+		base      : $danger-color,
+		mid-dark  : mix(black, $danger-color, 40%),
+		dark      : mix(black, $danger-color, 80%)
+	)	
+);
+
+$ms00 : 1 !default;
+
+$base-margin: 16px;
+$base-padding: 1.5rem;
+
+$base-font-family: 'Source Sans Pro', sans-serif;
+$primary-font-family: 'Roboto', sans-serif;
+$secondary-font-family: $base-font-family;
+$code-font-family: "Source Code Pro", monospace;
+$sans-serif-font-family: sans-serif;
+$serif-font-family: serif;
+
+$base-font-size: #{$ms00 * 16}px !default;
+$base-line-height: 1.5;
+
+$body-background-color: #fff;
+$base-color: #666;

@@ -1,0 +1,14 @@
+<!-- Libraries Sscripts -->
+{% if layout.libs_scripts and layout.libs_scripts != empty %} {% for script_src in layout.libs_scripts %}
+<script src="{{ script_src | prepend: site.baseurl }}"></script>
+{% endfor %} {% endif %}
+<!-- Template Scripts -->
+{% if layout.base_scripts and layout.base_scripts != empty %} {% for script_src in layout.base_scripts %}
+<script src="{{ script_src | prepend: site.baseurl }}"></script>
+{% endfor %} {% endif %}
+<!-- Page Scripts -->
+{% if page.page_scripts and page.page_scripts != empty %} {% for script_src in page.page_scripts %}
+<script src="{{ script_src | prepend: site.baseurl }}"></script>
+{% endfor %} {% endif %}
+<!-- Google Analytics Scripts -->
+{% if site.google-analytics-tracking_id %}{% include shared/google-analytics.scripts.html %}{% endif %}

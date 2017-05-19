@@ -1,0 +1,19 @@
+@charset 'UTF-8';
+
+// 1. Core
+@import
+  'core/base.settings',
+  'core/base.scripts',
+  'core/base',
+  'core/fonts',
+  'core/typography';
+
+// 2. Vendor
+@import
+  'vendor/syntax-highlighting',
+  'vendor/syntax-highlighting-theme-solarized-light';
+
+// Components
+@import
+  'components/shared/ahs-logo',
+  'components/hero';

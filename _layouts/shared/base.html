@@ -1,0 +1,20 @@
+--- 
+# Jekyll layout: base 
+# v2.0 # © 2016–2017 drdynscript 
+# MIT License 
+layout: shared/compress 
+---
+
+<!doctype html>
+<html class="no-js" lang="nl" dir="ltr">
+{% include shared/head.html %}
+
+<body>
+    {{ content }}
+    <script>
+        window.baseurl = '{{ site.baseurl }}';
+    </script>
+    {% include shared/foot.html %}
+</body>
+
+</html>

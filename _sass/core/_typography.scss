@@ -1,0 +1,46 @@
+body {
+  background-color: $body-background-color;
+  color: $base-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: normal;
+  line-height: $base-line-height;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: 'liga', 'kern';
+  direction: ltr;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $secondary-font-family;
+  font-weight: 300;
+  color: $base-color;
+}
+
+/*h2 {
+  &::after {
+			position: relative;
+			left: 0;
+			top: 4px;
+			content: '';
+			display: block;
+			height: 3px;
+			width: 3em;
+			background-color: $color-header-logo;
+		}
+}
+
+h3 {
+  color: $color-secondary;
+}
+
+h4 {
+  color: $color-tertiary;
+}*/

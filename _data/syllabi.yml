@@ -1,0 +1,95 @@
+- id: SLLBSV2
+  title: Syllabusv2
+  title_long: Syllabus Version 2
+  type: OLOD # or MODULE
+  owner: OPR
+  authors: [AAD, BM, DDW, EVR, KR, LMCF, PDP, PVD, SA]
+  copyright:
+    year: 2017-18
+    department: 
+      en: Bachelor of Graphical and Digital Media
+      nl: Bachelor in de grafische en digitale media
+    institute:
+      en: Artevelde University College Ghent
+      nl: Arteveldehogeschool
+  ahs:
+    - programme:
+      - degree:
+        id: PBAGDM
+        en: Bachelor of Graphical and Digital Media
+        nl: Bachelor in de grafische en digitale media
+      - major:
+        id: MMP
+        en: Multimedia Production
+        nl: Multimediaproductie
+      - minor:
+        id: NMD
+        en : New Media Development
+        nl : New Media Development
+        short: NMD
+    - resources:
+      - chamilo_id: 0
+      - ects_fiche: http://www.arteveldehogeschool.be/ects/
+- id: 1718_WOT
+  title: WOT
+  title_long: Web Of Things
+  type: OLOD # or MODULE
+  owner: PDP
+  authors: [PDP]
+  copyright:
+    year: 2017-18
+    department: 
+      en: Bachelor of Graphical and Digital Media
+      nl: Bachelor in de grafische en digitale media
+    institute:
+      en: Artevelde University College Ghent
+      nl: Arteveldehogeschool
+  ahs:
+    - programme:
+      - degree:
+        id: PBAGDM
+        en: Bachelor of Graphical and Digital Media
+        nl: Bachelor in de grafische en digitale media
+      - major:
+        id: MMP
+        en: Multimedia Production
+        nl: Multimediaproductie
+      - minor:
+        id: NMD
+        en : New Media Development
+        nl : New Media Development
+        short: NMD
+    - resources:
+      - chamilo_id: 0
+      - ects_fiche: http://www.arteveldehogeschool.be/ects/
+- id: WDAD4
+  title: WDAD-IV
+  title_long: Webdesign & Develoment IV
+  type: OLOD # or MODULE
+  owner: PDP
+  copyright:
+    year: 2016-17
+    department: 
+      en: Bachelor of Graphical and Digital Media
+      nl: Bachelor in de grafische en digitale media
+    institute:
+      en: Artevelde University College Ghent
+      nl: Arteveldehogeschool
+  ahs:
+    - programme:
+      - degree:
+        id: PBAGDM
+        en: Bachelor of Graphical and Digital Media
+        nl: Bachelor in de grafische en digitale media
+      - major:
+        id: MMP
+        en: Multimedia Production
+        nl: Multimediaproductie
+      - minor:
+        id: PRODEV
+        en : Professional Software Development
+        nl : Professional Software Development
+        short: proDEV
+    - resources:
+      - chamilo_id: 0
+      - ects_fiche: http://www.arteveldehogeschool.be/ects/

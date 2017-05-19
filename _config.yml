@@ -1,63 +1,69 @@
 # Site settings
-language:               ""
-title:                  "Site Title"
-description:            "Site description"
-google-verification:    ""
+# -------------
+baseurl :  # the subpath of your site, e.g. /blog
+colour  : primary
+language: nl
+host    : 127.0.0.1
+port    : 4000
 
-# Handling Reading
-include:
-  - ".htaccess"
-  - "_pages"
+# SEO
+# ---
+title       : 'gdm.gent'
+subdomain   : 'New Media Development'
+domain      : 'Grafische en Digitale Media'
+description : "We educate future talents in design and development for apps and webapplications."
+keywords    : 'portfolio, stories, grafische, digitale, media, gdm, arteveldehogeschool'
+author      : 'Bachelor of Graphical and Digital Media | Artevelde University College Ghent'
+copyright   : 'Copyright 2010-17 Artevelde University College Ghent. All Rights Reserved.'
 
-exclude:
-  - "/_assets/"
-  - "bower.json"
-  - "DOC.md"
-  - "Gemfile"
-  - "Gemfile.lock"
-  - "/gulp/"
-  - "gulpfile.js"
-  - "LICENSE.md"
-  - "Makefile"
-  - "node_modules"
-  - "npm-debug.log"
-  - "package.json"
-  - "README.md"
-  - "rev-manifest.json"
+# Utilities
+# ---------
+words_per_minute: 60
 
-# Plugins
+# Google Services
+# ---------------
+google-analytics-tracking_id  :  "UA-18202861-3"
+
+# Where things are from Jekyll
+# ----------------------------
+plugins_dir   : /_plugins
+layouts_dir   : /_layouts
+data_dir      : /_data
+includes_dir  : /_includes
+
+# Build settings
+# --------------
 gems:
-  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-mentions
   - jekyll-paginate
-  - jekyll-redirect
-
-# Conversion
-incremental:      true
-
-# Serving
-# url:            ""
-# baseurl:        "" # does not include hostname
-
-# Outputting
-permalink:        "/blog/:year/:title/"
-paginate_path:    "/blog/page:num"
-paginate:         5
-
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jemoji
+sass:
+  sass_dir: /_sass
+  style: compressed
+exclude:
+  - gulpfile            # Remove for new syllabus
+  - node_modules/       # Remove for new syllabus
+  - src/                # Remove for new syllabus
+  - Gemfile
+  - LICENSE
+  - package.json        # Remove for new syllabus
+  - README.md
 
 # Collections
+# -----------
 collections:
-  projects:
-    output: true
-  olods:
+  faqs:
     output: false
-  specialisations:
-    output: false
-  departments:
-    output: false
-    
+
 # Defaults
+# --------
 defaults:
   - scope:
-      type: projects
+      type: faqs
     values:
-      layout: project
+      layout: course

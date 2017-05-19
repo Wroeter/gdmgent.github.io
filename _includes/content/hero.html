@@ -1,0 +1,13 @@
+{% assign hero_image = include.image %}
+{% assign hero_headline = include.headline | markdownify %}
+{% assign hero_description = include.description | markdownify %}
+
+<div class="hero" id="intro">
+  <picture class="hero__picture">
+    <img src="{{ hero_image | prepend: site.baseurl }}">
+  </picture>
+  <header class="hero__header">
+    <h1 class="hero__headline">{{ hero_headline }}</h1>
+    <h2 class="hero__baseline">{{ hero_description }}</h2>
+  </header>
+</div>

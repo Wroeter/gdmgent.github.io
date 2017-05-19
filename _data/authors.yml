@@ -1,0 +1,92 @@
+- id: OPR
+  name:
+    full: Olivier Parent
+    short  : O. Parent
+  image       : opr.jpg
+  email    : olivier.parent@arteveldehs.be
+  website  : http://www.olivierparent.be
+  repository :
+    bitbucket: https://bitbucket.org/olivierparent/
+    github   : https://github.com/OlivierParent
+    gitlab   : https://gitlab.com/OlivierParent
+
+- id: AAD
+  name:
+    full   : Ann Audenaert
+    short  : A. Audenaert
+  image       : aad.jpg
+  email    : ann.audenaert@arteveldehs.be
+  website  : http://www.gdm.gent
+
+- id: BM
+  name:
+    full   : Bart Missant
+    short  : B. Missant
+  image       : bm.jpg
+  email    : bart.missant@arteveldehs.be
+  website  : http://www.gdm.gent
+
+- id: DDW 
+  name:
+    full   : Dieter De Weirdt
+    short  : D. De Weirdt
+  email    : dieter.deweirdt@arteveldehs.be
+  website  : http://www.gdm.gent
+
+- id: EVR
+  name:
+    full   : Evelien Rutsaert
+    short  : E. Rutsaert
+  image       : evr.jpg
+  email    : evelien.rutsaert@arteveldehs.be
+  website  : http://www.gdm.gent
+
+- id: JPT 
+  name:
+    full   : Jonas Pottie
+    short  : J. Pottie
+  email    : jonas.pottie@arteveldehs.be
+  website  : http://www.gdm.gent
+
+- id: KR 
+  name:
+    full   : Kristof Raes
+    short  : K. Raes
+  image       : kr.jpg
+  email    : kristof.raes@arteveldehs.be
+  website  : http://www.gdm.gent
+
+- id: LMCF 
+  name:
+    full   : Liliana Maria Carrillo Flórez
+    short  : L.M. Corillo Flórez
+  email    : lilianamaria.carrilloflorez@arteveldehs.be
+  website  : http://www.gdm.gent
+
+- id: PDP 
+  name:
+    full   : Philippe De Pauw - Waterschoot
+    short  : Ph. De Pauw
+  image       : pdp.jpg
+  email    : philippe.depauw@arteveldehs.be
+  website  : http://www.drdynscript.eu
+  repository :
+    bitbucket: https://bitbucket.org/drdynscript/
+    github   : https://github.com/drdynscript
+    gitlab   : https://gitlab.com/drdynscript
+
+- id: PVD 
+  name:
+    full   : Pieter Vandaele
+    short  : P. Vandaele
+  email    : pieter.vandaele@arteveldehs.be
+  website  : http://www.gdm.gent
+  
+- id: SA 
+  name:
+    full   : Stijn Anseel
+    short  : S. Anseel
+    code   : SA
+  image       : sta.jpg
+  email    : stijn.anseel@arteveldehs.be
+  website  : http://www.gdm.gent

@@ -1,0 +1,7 @@
+@function color-palette($palette: 'default', $tone: 'base', $palettes: $color-palettes) {
+  @return map-get(map-get($palettes, $palette), $tone);
+};
+
+@function ahs-color-palette($palette: 'ahs-blue', $tone: 'base', $palettes: $ahs-color-palettes) {
+  @return map-get(map-get($palettes, $palette), $tone);
+};

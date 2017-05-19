@@ -1,0 +1,168 @@
+/// Syntax Highlighting
+$languages: apache bash bat blade cmd code conf cs css emmet gherkin hbs html ini inky json js liquid md nginx php po posh rb scss sh sql swift ts twig xml yml zsh;
+
+// Code Colors
+$code-color: (
+  'base01': #93a1a1,
+  'base02': #586e75,
+  'base03': #B58900,
+  'bg01'  : #002b36,
+  'bg02'  : #f4f3f1,
+  'orange': #cb4b16,
+  'red'   : #dc322f,
+  'blue'  : #268bd2,
+  'cyan'  : #2aa198,
+  'green' : #859900
+);
+
+// Code Label Color
+$languages-color: (
+  apache : map-get($code-color-palette, color-A),
+  bash   : map-get($code-color-palette, color-B),
+  bat    : map-get($code-color-palette, color-F),
+  blade  : map-get($code-color-palette, color-H),
+  cmd    : map-get($code-color-palette, color-F),
+  code   : map-get($code-color-palette, color-A),
+  conf   : map-get($code-color-palette, color-F),
+  cs     : map-get($code-color-palette, color-F),
+  css    : map-get($code-color-palette, color-C),
+  emmet  : map-get($code-color-palette, color-A),
+  gherkin: map-get($code-color-palette, color-E),
+  html   : map-get($code-color-palette, color-B),
+  hbs    : map-get($code-color-palette, color-B),
+  ini    : map-get($code-color-palette, color-A),
+  inky   : map-get($code-color-palette, color-B),
+  json   : map-get($code-color-palette, color-A),
+  js     : map-get($code-color-palette, color-D),
+  liquid : map-get($code-color-palette, color-F),
+  md     : map-get($code-color-palette, color-A),
+  nginx  : map-get($code-color-palette, color-A),
+  php    : map-get($code-color-palette, color-G),
+  po     : map-get($code-color-palette, color-A),
+  posh   : map-get($code-color-palette, color-F),
+  rb     : map-get($code-color-palette, color-B),
+  scss   : map-get($code-color-palette, color-H),
+  sh     : map-get($code-color-palette, color-A),
+  sql    : map-get($code-color-palette, color-F),
+  swift  : map-get($code-color-palette, color-C),
+  ts     : map-get($code-color-palette, color-F),
+  twig   : map-get($code-color-palette, color-E),
+  xml    : map-get($code-color-palette, color-C),
+  yml    : map-get($code-color-palette, color-D),
+  zsh    : map-get($code-color-palette, color-A)
+);
+
+$languages-label: (
+  apache : "Apache HTTP Server",
+  bash   : "Bash",
+  bat    : "Batch",
+  blade  : "Laravel Blade",
+  cmd    : "Command",
+  code   : "Code",
+  conf   : "Configuration",
+  cs     : "C#",
+  css    : "CSS",
+  emmet  : "Emmet",
+  gherkin: "Behat Gherkin",
+  hbs    : "Handlebars",
+  html   : "HTML",
+  ini    : "Ini",
+  inky   : "Inky",
+  json   : "JSON",
+  js     : "JavaScript",
+  liquid : "Liquid",
+  md     : "Markdown",
+  nginx  : "NGINX",
+  php    : "PHP",
+  po     : "PO",
+  posh   : "PowerShell",
+  rb     : "Ruby",
+  scss   : "SCSS",
+  sh     : "Shell Script",
+  sql    : "SQL",
+  swift  : "Swift",
+  ts     : "TypeScript",
+  twig   : "Twig",
+  xml    : "XML",
+  yml    : "YAML",
+  zsh    : "Terminal"
+);
+
+// Highlight Colours
+$base01: map-get($code-color, 'base01');
+$base02: map-get($code-color, 'base02');
+$base03: map-get($code-color, 'base03');
+$bg01  : map-get($code-color, 'bg01');
+$bg02  : map-get($code-color, 'bg02');
+$orange: map-get($code-color, 'orange');
+$red   : map-get($code-color, 'red');
+$blue  : map-get($code-color, 'blue');
+$cyan  : map-get($code-color, 'cyan');
+$green : map-get($code-color, 'green');
+
+figure.highlight {
+  @mixin label($background-color: map_get($code-color-palette, color-G), $color: white,  $text: "Code") {
+    position: relative;
+    &::after{
+      background-color: $background-color;
+      border-radius: 0 0 0 .3rem;
+      color: $color;
+      content: $text;
+      display: inline-block;
+      font-family: $sans-serif-font-family;
+      font-size: .75rem;
+      height: 2rem;
+      line-height: 2rem;
+      opacity: .5;
+      padding: 0 .5rem 0 .7rem;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+  margin: 2rem 0;
+  overflow: auto;
+  &::before {
+    content: attr(data-file);
+    font-family: $code-font-family;
+    opacity: .5;
+    padding-left: 1rem;
+    position: absolute;
+  }
+  &[data-file] {
+    > pre {
+      padding: 2rem 0 0;
+    }
+  }
+  &.language- {
+    @each $language in $languages {
+      &#{$language} {
+        @include label($background-color: map-get($languages-color, $language), $text: map-get($languages-label, $language));
+      }
+    }
+  }
+  pre {
+    background-color: inherit;
+    border: none;
+    border-radius: 0;
+    color: inherit;
+    padding: 1rem;
+    margin: 0;
+  }
+  code {
+    span.file:first-child {
+      background-color: $base03;
+      border-radius: 0 0 .3rem;
+      color: white;
+      height: 2rem;
+      left: 0;
+      line-height: 2rem;
+      padding: 0 .7rem 0 .5rem;
+      position: absolute;
+      top: 0;
+    }
+  }
+  .lineno {
+    background-color: rgba(255, 255, 255 , .5);
+  }
+}

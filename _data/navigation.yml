@@ -1,0 +1,11 @@
+- name: Inhoud
+  folder: pages/contents/
+  #nr: II
+  faicon: fa-cube
+  activatenr: true
+
+- name: Style Guide
+  folder: pages/styleguide/
+  #nr: IV
+  faicon: fa-grav
+  activatenr: true

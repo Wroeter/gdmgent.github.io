@@ -1,0 +1,32 @@
+- name: $ahs-blue	
+  hex: #0591c6
+  rgba:
+  hsla:
+- name: $ahs-fuchsia	
+  hex: #c60561
+  rgba:
+  hsla:
+- name: $ahs-green	
+  hex: #a4c605
+  rgba:
+  hsla:
+- name: $ahs-orange	
+  hex: #e79906
+  rgba:
+  hsla:
+- name: $ahs-white	
+  hex: #f6f6f6
+  rgba:
+  hsla:
+- name: $ahs-grey	
+  hex: #d0d0d0
+  rgba:
+  hsla:
+- name: $ahs-dark-grey	
+  hex: #8c8c8c
+  rgba:
+  hsla:
+- name: $ahs-black	
+  hex: #2f2f2f
+  rgba:
+  hsla:
