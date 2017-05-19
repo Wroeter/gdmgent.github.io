@@ -10,5 +10,5 @@ page_styles: []
 page_scripts: []
 ---
 
-{% include content/hero.html image="assets/images/hero4.jpg" headline="**New Media <br>Development**" description="We educate future talents in **Design** for **Apps** and **Webapplications**,
+{% include content/hero.html image="assets/images/hero.jpg" headline="**New Media <br>Development**" description="We educate future talents in **Design** for **Apps** and **Webapplications**,
 **Web**- and **App Development** and the whole **Management** of those **workflows**!" %}
