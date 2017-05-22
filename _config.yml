@@ -54,6 +54,12 @@ exclude:
   - package.json        # Remove for new syllabus
   - README.md
 
+# Outputting
+# ----------
+permalink:        "/blog/:year/:title/"
+paginate_path:    "/blog/page:num"
+paginate:         5
+
 # Collections
 # -----------
 collections:

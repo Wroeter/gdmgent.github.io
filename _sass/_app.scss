@@ -10,8 +10,11 @@
 
 // 2. Vendor
 @import
+  'vendor/normalize',
   'vendor/syntax-highlighting',
   'vendor/syntax-highlighting-theme-solarized-light';
+
+// 3. Layout
 
 // Components
 @import
